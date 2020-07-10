@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+    tools:context=".MainActivity">
+
+    <SeekBar
+        android:id="@+id/sickbar"
+        android:layout_width="381dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="168dp"
+        android:max="9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="199dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif"
+        android:text="Seleccione cantidad de notas:"
+        android:textColor="#CEEBEE "
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/sickbar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/promico" />
+
+    <TextView
+        android:id="@+id/cantiNotas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="16dp"
+        android:text="2"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sickbar" />
+
+    <ScrollView
+        android:layout_width="408dp"
+        android:layout_height="269dp"
+        android:layout_marginTop="284dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:id="@+id/Nota1tablR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/notatxtV1"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="     Nota 1"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/notaET1"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/notas"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/espacio1"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/ponderaET1"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/ponderaciones"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/porcentajetxtV1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  %          "
+                    android:textSize="20sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Nota2tablR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/notatxtV2"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="     Nota 2"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/notaET2"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/notas"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/espacio2"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/ponderaET2"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/ponderaciones"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/porcentajetxtV2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  %          "
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/borrar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/trash" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Nota3tablR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/notatxtV3"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="     Nota 3"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/notaET3"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:hint="@string/notas"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/espacio3"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/ponderaET3"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/ponderaciones"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/porcentajetxtV3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  %          "
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/borrar3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/trash" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/nota4tablR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/notatxtV4"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="     Nota 4"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/notaET4"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/notas"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/espacio10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/ponderaET4"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/ponderaciones"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/porcentajetxtV4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  %          "
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/borrar4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/trash" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/nota5tablR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/notatxtV5"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="     Nota 5"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/notaET5"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/notas"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/espacio12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/ponderaET5"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/ponderaciones"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/porcentajetxtV5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  %          "
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/borrar5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/trash" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/nota6tablR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/notatxtV6"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="     Nota 6"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/notaET6"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/notas"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/espacio11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/ponderaET6"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/ponderaciones"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/porcentajetxtV6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  %          "
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/borrar6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/trash" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/nota7tablR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/notatxtV7"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="     Nota 7"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/notaET7"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/notas"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/espacio5"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/ponderaET7"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/ponderaciones"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/porcentajetxtV7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  %          "
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/borrar7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/trash" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/nota8tablR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/notatxtV8"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="     Nota 8"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/notaET8"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/notas"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/espacio6"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/ponderaET8"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/ponderaciones"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/porcentajetxtV8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  %          "
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/borrar8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/trash" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/nota9tablR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/notatxtV9"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="     Nota 9"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/notaET9"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/notas"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/espacio7"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/ponderaET9"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/ponderaciones"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/porcentajetxtV9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  %          "
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/borrar9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/trash" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/nota10tablR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/notatxtV10"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="     Nota 10"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/notaET10"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/notas"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/espacio9"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/ponderaET10"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/ponderaciones"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/porcentajetxtV10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  %          "
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/borrar10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/trash" />
+
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/notaFinalTxtV"
+        android:layout_width="118dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="32dp"
+        android:text="Nota Final"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/NotaFinalTxtV"
+        android:layout_width="118dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="68dp"
+        android:text="Estado"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="665dp" />
+
+    <TextView
+        android:id="@+id/PromedioFinalTxtV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginBottom="36dp"
+        android:text="____"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/pondFina"
+        android:layout_width="73dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="36dp"
+        android:text="___"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
